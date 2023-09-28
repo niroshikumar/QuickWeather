@@ -1,0 +1,44 @@
+.nav-title-margin-c{
+    margin-left: 16%;
+    margin-right: 16%;
+}
+
+.card-margin-c{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+p.temp-display{
+    font-size: 70px
+}
+
+p.temp-display sup span {
+    font-size: 30px;
+}
+
+p.temp-display span{
+    font-size: 30px; 
+    margin-left: -20px;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.light-mode {
+    background-color: white;
+    color: black;
+}
+
+.quick-whether{
+    font-size: 50px;
+    color: #08ca49;
+    font-family:Georgia, 'Times New Roman', Times, serif
+
+}
+
+.earth{
+    width:20px;
+}
+
