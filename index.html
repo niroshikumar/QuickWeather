@@ -48,7 +48,10 @@
             <input id="searchField" type="text" class="col-md-9">
             <button class="btn btn-outline-secondary col-md-3" type="button" id="button-addon2"
                 onclick="searchBtnOnclick()">Search</button>
+
         </div>
+
+
         <ul class="nav nav-tabs card-margin-c" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
                 <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
@@ -65,7 +68,11 @@
             </li>
 
         </ul>
+
+
         <div class="tab-content" id="myTabContent">
+
+            <!--------------------------------- Current Weather --------------------------------------->
 
             <div class="tab-pane fade show active" id="currentweather-tab-pane" role="tabpanel"
                 aria-labelledby="currentweather-tab" tabindex="0">
@@ -125,195 +132,188 @@
                     </div>
                 </div>
             </div>
+
+            <!--------------------------------- Forecast --------------------------------------->
+
             <div class="tab-pane fade" id="forecast-tab-pane" role="tabpanel" aria-labelledby="forecast-tab"
                 tabindex="0">
                 <div class="card mt-2 card-margin-c">
                     <div class="row p-3">
-                        <h5 class="card-title">TUE 09/19</h5>
+                        <h5 class="card-title forecast-date">TUE 09/19</h5>
                         <div class="col-md-5 row">
                             <div class="col-md-6">
-                                <img class="icon" src="//cdn.weatherapi.com/weather/128x128/night/116.png">
+                                <img class="icon forecast-image"
+                                    src="//cdn.weatherapi.com/weather/128x128/night/116.png">
                             </div>
                             <div class="col-md-6 row ml-2">
-                                <p class="temp-display">27
-                                    <sup><span>o</span></sup><span>C</span>
+                                <p class="temp-display"><span class="temp forecast-temp" id="crntTemperature">27</span>
+                                    <sup><span>o</span></sup><span class="c_icon">C</span>
                                 </p>
                             </div>
-                            <h6 class="card-title">Thunderstorm</h6>
-                            <p class="card-text">Thundery showers over many areas in the late morning and early
-                                afternoon.</p>
+                            <h6 class="card-title forecast-condition">Thunderstorm</h6>
                         </div>
                         <div class="col-md-7">
                             <div class="card-body">
                                 <table class="box" width="100%">
                                     <tr>
                                         <td>Humidity</td>
-                                        <td>94%</td>
+                                        <td class="forecast-humidity">94%</td>
                                     </tr>
                                     <tr>
                                         <td>Wind Speed</td>
-                                        <td>6 km/h</td>
+                                        <td class="forecast-wind-speed">6 km/h</td>
                                     </tr>
                                     <tr>
                                         <td>UV Index</td>
-                                        <td>1011 mb</td>
+                                        <td class="forecast-uv-index">1011 mb</td>
                                     </tr>
                                     <tr>
                                         <td>Visibility</td>
-                                        <td>16 km</td>
+                                        <td class="forecast-visibility">16 km</td>
                                     </tr>
                                     <tr>
                                         <td>Total Precipitation</td>
-                                        <td>12%</td>
+                                        <td class="forecast-precipitation">12%</td>
                                     </tr>
                                 </table>
 
                             </div>
-                        </div>
-                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                    </div>
-                </div>
-
-                <div class="card mt-2 card-margin-c">
-                    <div class="row p-3">
-                        <h5 class="card-title">WED 09/20</h5>
-                        <div class="col-md-5 row">
-                            <div class="col-md-6">
-                                <img class="icon" src="//cdn.weatherapi.com/weather/128x128/night/116.png">
-                            </div>
-                            <div class="col-md-6 row ml-2">
-                                <p class="temp-display">27
-                                    <sup><span>o</span></sup><span>C</span>
-                                </p>
-                            </div>
-                            <h6 class="card-title">Thunderstorm</h6>
-                            <p class="card-text">Thundery showers over many areas in the late morning and early
-                                afternoon.</p>
-                        </div>
-                        <div class="col-md-7">
-                            <div class="card-body">
-                                <table class="box" width="100%">
-                                    <tr>
-                                        <td>Humidity</td>
-                                        <td>94%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Wind Speed</td>
-                                        <td>6 km/h</td>
-                                    </tr>
-                                    <tr>
-                                        <td>UV Index</td>
-                                        <td>1011 mb</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Visibility</td>
-                                        <td>16 km</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Total Precipitation</td>
-                                        <td>12%</td>
-                                    </tr>
-                                </table>
-
-                            </div>
-
-
-                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small>
-                            </p>
                         </div>
                     </div>
                 </div>
-
                 <div class="card mt-2 card-margin-c">
                     <div class="row p-3">
-                        <h5 class="card-title">THU 09/21</h5>
+                        <h5 class="card-title forecast-date">TUE 09/20</h5>
                         <div class="col-md-5 row">
                             <div class="col-md-6">
-                                <img class="icon" src="//cdn.weatherapi.com/weather/128x128/night/116.png">
+                                <img class="icon forecast-image"
+                                    src="//cdn.weatherapi.com/weather/128x128/night/116.png">
                             </div>
                             <div class="col-md-6 row ml-2">
-                                <p class="temp-display">27
-                                    <sup><span>o</span></sup><span>C</span>
+                                <p class="temp-display"><span class="temp forecast-temp" id="crntTemperature">27</span>
+                                    <sup><span>o</span></sup><span class="c_icon">C</span>
                                 </p>
                             </div>
-                            <h6 class="card-title">Thunderstorm</h6>
-                            <p class="card-text">Thundery showers over many areas in the late morning and early
-                                afternoon.</p>
+                            <h6 class="card-title forecast-condition">Thunderstorm</h6>
                         </div>
                         <div class="col-md-7">
                             <div class="card-body">
                                 <table class="box" width="100%">
                                     <tr>
                                         <td>Humidity</td>
-                                        <td>94%</td>
+                                        <td class="forecast-humidity">94%</td>
                                     </tr>
                                     <tr>
                                         <td>Wind Speed</td>
-                                        <td>6 km/h</td>
+                                        <td class="forecast-wind-speed">6 km/h</td>
                                     </tr>
                                     <tr>
                                         <td>UV Index</td>
-                                        <td>1011 mb</td>
+                                        <td class="forecast-uv-index">1011 mb</td>
                                     </tr>
                                     <tr>
                                         <td>Visibility</td>
-                                        <td>16 km</td>
+                                        <td class="forecast-visibility">16 km</td>
                                     </tr>
                                     <tr>
                                         <td>Total Precipitation</td>
-                                        <td>12%</td>
+                                        <td class="forecast-precipitation">12%</td>
                                     </tr>
                                 </table>
 
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-2 card-margin-c">
+                    <div class="row p-3">
+                        <h5 class="card-title forecast-date">TUE 09/19</h5>
+                        <div class="col-md-5 row">
+                            <div class="col-md-6">
+                                <img class="icon forecast-image"
+                                    src="//cdn.weatherapi.com/weather/128x128/night/116.png">
+                            </div>
+                            <div class="col-md-6 row ml-2">
+                                <p class="temp-display"><span class="temp forecast-temp" id="crntTemperature">27</span>
+                                    <sup><span>o</span></sup><span class="c_icon">C</span>
+                                </p>
+                            </div>
+                            <h6 class="card-title forecast-condition">Thunderstorm</h6>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <table class="box" width="100%">
+                                    <tr>
+                                        <td>Humidity</td>
+                                        <td class="forecast-humidity">94%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Wind Speed</td>
+                                        <td class="forecast-wind-speed">6 km/h</td>
+                                    </tr>
+                                    <tr>
+                                        <td>UV Index</td>
+                                        <td class="forecast-uv-index">1011 mb</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Visibility</td>
+                                        <td class="forecast-visibility">16 km</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total Precipitation</td>
+                                        <td class="forecast-precipitation">12%</td>
+                                    </tr>
+                                </table>
 
-                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small>
-                            </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!--------------------------------- History --------------------------------------->
+
 
             <div class="tab-pane fade" id="history-tab-pane" role="tabpanel" aria-labelledby="history-tab" tabindex="0">
 
                 <div class="card mt-2 card-margin-c">
                     <div class="row p-3">
-                        <h5 class="card-title">MON 09/18</h5>
+                        <h5 class="card-title history-date">MON 09/18</h5>
                         <div class="col-md-5 row">
                             <div class="col-md-6">
-                                <img class="icon" src="//cdn.weatherapi.com/weather/128x128/night/116.png">
+                                <img class="icon history-image"
+                                    src="//cdn.weatherapi.com/weather/128x128/night/116.png">
                             </div>
                             <div class="col-md-6 row ml-2">
-                                <p class="temp-display">27
-                                    <sup><span>o</span></sup><span>C</span>
+                                <p class="temp-display"><span class="temp history-temp" id="crntTemperature">27</span>
+                                    <sup><span>o</span></sup><span class="c_icon">C</span>
                                 </p>
                             </div>
-                            <h6 class="card-title">Thunderstorm</h6>
-                            <p class="card-text">Thundery showers over many areas in the late morning and early
-                                afternoon.</p>
+                            <h6 class="card-title history-condition">Thunderstorm</h6>
+
                         </div>
                         <div class="col-md-7">
                             <div class="card-body">
                                 <table class="box" width="100%">
                                     <tr>
                                         <td>Humidity</td>
-                                        <td>94%</td>
+                                        <td class="history-humidity">94%</td>
                                     </tr>
                                     <tr>
                                         <td>Wind Speed</td>
-                                        <td>6 km/h</td>
+                                        <td class="history-wind-speed">6 km/h</td>
                                     </tr>
                                     <tr>
                                         <td>UV Index</td>
-                                        <td>1011 mb</td>
+                                        <td class="history-uv-index">1011 mb</td>
                                     </tr>
                                     <tr>
                                         <td>Visibility</td>
-                                        <td>16 km</td>
+                                        <td class="history-visibility">16 km</td>
                                     </tr>
                                     <tr>
                                         <td>Total Precipitation</td>
-                                        <td>12%</td>
+                                        <td class="history-total-precipitation">12%</td>
                                     </tr>
                                 </table>
 
@@ -326,45 +326,44 @@
                 </div>
                 <div class="card mt-2 card-margin-c">
                     <div class="row p-3">
-                        <h5 class="card-title">MON 09/18</h5>
+                        <h5 class="card-title history-date">MON 09/18</h5>
                         <div class="col-md-5 row">
                             <div class="col-md-6">
-                                <img class="icon" src="//cdn.weatherapi.com/weather/128x128/night/116.png">
+                                <img class="icon history-image"
+                                    src="//cdn.weatherapi.com/weather/128x128/night/116.png">
                             </div>
                             <div class="col-md-6 row ml-2">
-                                <p class="temp-display">27
-                                    <sup><span>o</span></sup><span>C</span>
+                                <p class="temp-display"><span class="temp history-temp" id="crntTemperature">27</span>
+                                    <sup><span>o</span></sup><span class="c_icon">C</span>
                                 </p>
                             </div>
-                            <h6 class="card-title">Thunderstorm</h6>
-                            <p class="card-text">Thundery showers over many areas in the late morning and early
-                                afternoon.</p>
+                            <h6 class="card-title history-condition">Thunderstorm</h6>
+
                         </div>
                         <div class="col-md-7">
                             <div class="card-body">
                                 <table class="box" width="100%">
                                     <tr>
                                         <td>Humidity</td>
-                                        <td>94%</td>
+                                        <td class="history-humidity">94%</td>
                                     </tr>
                                     <tr>
                                         <td>Wind Speed</td>
-                                        <td>6 km/h</td>
+                                        <td class="history-wind-speed">6 km/h</td>
                                     </tr>
                                     <tr>
                                         <td>UV Index</td>
-                                        <td>1011 mb</td>
+                                        <td class="history-uv-index">1011 mb</td>
                                     </tr>
                                     <tr>
                                         <td>Visibility</td>
-                                        <td>16 km</td>
+                                        <td class="history-visibility">16 km</td>
                                     </tr>
                                     <tr>
                                         <td>Total Precipitation</td>
-                                        <td>12%</td>
+                                        <td class="history-total-precipitation">12%</td>
                                     </tr>
                                 </table>
-
 
                             </div>
 
@@ -375,42 +374,234 @@
                 </div>
                 <div class="card mt-2 card-margin-c">
                     <div class="row p-3">
-                        <h5 class="card-title">MON 09/18</h5>
+                        <h5 class="card-title history-date">MON 09/18</h5>
                         <div class="col-md-5 row">
                             <div class="col-md-6">
-                                <img class="icon" src="//cdn.weatherapi.com/weather/128x128/night/116.png">
+                                <img class="icon history-image"
+                                    src="//cdn.weatherapi.com/weather/128x128/night/116.png">
                             </div>
                             <div class="col-md-6 row ml-2">
-                                <p class="temp-display">27
-                                    <sup><span>o</span></sup><span>C</span>
+                                <p class="temp-display"><span class="temp history-temp" id="crntTemperature">27</span>
+                                    <sup><span>o</span></sup><span class="c_icon">C</span>
                                 </p>
                             </div>
-                            <h6 class="card-title">Thunderstorm</h6>
-                            <p class="card-text">Thundery showers over many areas in the late morning and early
-                                afternoon.</p>
+                            <h6 class="card-title history-condition">Thunderstorm</h6>
+
                         </div>
                         <div class="col-md-7">
                             <div class="card-body">
                                 <table class="box" width="100%">
                                     <tr>
                                         <td>Humidity</td>
-                                        <td>94%</td>
+                                        <td class="history-humidity">94%</td>
                                     </tr>
                                     <tr>
                                         <td>Wind Speed</td>
-                                        <td>6 km/h</td>
+                                        <td class="history-wind-speed">6 km/h</td>
                                     </tr>
                                     <tr>
                                         <td>UV Index</td>
-                                        <td>1011 mb</td>
+                                        <td class="history-uv-index">1011 mb</td>
                                     </tr>
                                     <tr>
                                         <td>Visibility</td>
-                                        <td>16 km</td>
+                                        <td class="history-visibility">16 km</td>
                                     </tr>
                                     <tr>
                                         <td>Total Precipitation</td>
-                                        <td>12%</td>
+                                        <td class="history-total-precipitation">12%</td>
+                                    </tr>
+                                </table>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="card mt-2 card-margin-c">
+                    <div class="row p-3">
+                        <h5 class="card-title history-date">MON 09/18</h5>
+                        <div class="col-md-5 row">
+                            <div class="col-md-6">
+                                <img class="icon history-image"
+                                    src="//cdn.weatherapi.com/weather/128x128/night/116.png">
+                            </div>
+                            <div class="col-md-6 row ml-2">
+                                <p class="temp-display"><span class="temp history-temp" id="crntTemperature">27</span>
+                                    <sup><span>o</span></sup><span class="c_icon">C</span>
+                                </p>
+                            </div>
+                            <h6 class="card-title history-condition">Thunderstorm</h6>
+
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <table class="box" width="100%">
+                                    <tr>
+                                        <td>Humidity</td>
+                                        <td class="history-humidity">94%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Wind Speed</td>
+                                        <td class="history-wind-speed">6 km/h</td>
+                                    </tr>
+                                    <tr>
+                                        <td>UV Index</td>
+                                        <td class="history-uv-index">1011 mb</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Visibility</td>
+                                        <td class="history-visibility">16 km</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total Precipitation</td>
+                                        <td class="history-total-precipitation">12%</td>
+                                    </tr>
+                                </table>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="card mt-2 card-margin-c">
+                    <div class="row p-3">
+                        <h5 class="card-title history-date">MON 09/18</h5>
+                        <div class="col-md-5 row">
+                            <div class="col-md-6">
+                                <img class="icon history-image"
+                                    src="//cdn.weatherapi.com/weather/128x128/night/116.png">
+                            </div>
+                            <div class="col-md-6 row ml-2">
+                                <p class="temp-display"><span class="temp history-temp" id="crntTemperature">27</span>
+                                    <sup><span>o</span></sup><span class="c_icon">C</span>
+                                </p>
+                            </div>
+                            <h6 class="card-title history-condition">Thunderstorm</h6>
+
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <table class="box" width="100%">
+                                    <tr>
+                                        <td>Humidity</td>
+                                        <td class="history-humidity">94%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Wind Speed</td>
+                                        <td class="history-wind-speed">6 km/h</td>
+                                    </tr>
+                                    <tr>
+                                        <td>UV Index</td>
+                                        <td class="history-uv-index">1011 mb</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Visibility</td>
+                                        <td class="history-visibility">16 km</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total Precipitation</td>
+                                        <td class="history-total-precipitation">12%</td>
+                                    </tr>
+                                </table>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="card mt-2 card-margin-c">
+                    <div class="row p-3">
+                        <h5 class="card-title history-date">MON 09/18</h5>
+                        <div class="col-md-5 row">
+                            <div class="col-md-6">
+                                <img class="icon history-image"
+                                    src="//cdn.weatherapi.com/weather/128x128/night/116.png">
+                            </div>
+                            <div class="col-md-6 row ml-2">
+                                <p class="temp-display"><span class="temp history-temp" id="crntTemperature">27</span>
+                                    <sup><span>o</span></sup><span class="c_icon">C</span>
+                                </p>
+                            </div>
+                            <h6 class="card-title history-condition">Thunderstorm</h6>
+
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <table class="box" width="100%">
+                                    <tr>
+                                        <td>Humidity</td>
+                                        <td class="history-humidity">94%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Wind Speed</td>
+                                        <td class="history-wind-speed">6 km/h</td>
+                                    </tr>
+                                    <tr>
+                                        <td>UV Index</td>
+                                        <td class="history-uv-index">1011 mb</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Visibility</td>
+                                        <td class="history-visibility">16 km</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total Precipitation</td>
+                                        <td class="history-total-precipitation">12%</td>
+                                    </tr>
+                                </table>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="card mt-2 card-margin-c">
+                    <div class="row p-3">
+                        <h5 class="card-title history-date">MON 09/18</h5>
+                        <div class="col-md-5 row">
+                            <div class="col-md-6">
+                                <img class="icon history-image"
+                                    src="//cdn.weatherapi.com/weather/128x128/night/116.png">
+                            </div>
+                            <div class="col-md-6 row ml-2">
+                                <p class="temp-display"><span class="temp history-temp" id="crntTemperature">27</span>
+                                    <sup><span>o</span></sup><span class="c_icon">C</span>
+                                </p>
+                            </div>
+                            <h6 class="card-title history-condition">Thunderstorm</h6>
+
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <table class="box" width="100%">
+                                    <tr>
+                                        <td>Humidity</td>
+                                        <td class="history-humidity">94%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Wind Speed</td>
+                                        <td class="history-wind-speed">6 km/h</td>
+                                    </tr>
+                                    <tr>
+                                        <td>UV Index</td>
+                                        <td class="history-uv-index">1011 mb</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Visibility</td>
+                                        <td class="history-visibility">16 km</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total Precipitation</td>
+                                        <td class="history-total-precipitation">12%</td>
                                     </tr>
                                 </table>
 
@@ -422,10 +613,11 @@
 
                 </div>
 
-                <div id="map" class="card mt-3"></div>
+
+
             </div>
 
-
+            <div id="map" class="card mt-3"></div>
 
 
             <script src="https://code.jquery.com/jquery-3.7.1.js"

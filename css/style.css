@@ -45,10 +45,6 @@ p.temp-display span.c_icon {
     font-family: Georgia, 'Times New Roman', Times, serif
 }
 
-.earth {
-    width: 20px;
-}
-
 #map {
     height: 400px;
     margin-left: 10%;
